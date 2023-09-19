@@ -1,0 +1,21 @@
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template: 
+    "header header header header header header header header header header" 1fr
+    "aside main main main main main main main main main" 5fr
+    "aside main main main main main main main main main" 4fr;
+}
+
+app-toolbar{
+  grid-area: header;
+}
+
+app-aside{
+  grid-area: aside;
+}
+
+app-container{
+  grid-area: main;
+}
